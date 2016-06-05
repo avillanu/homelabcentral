@@ -1,0 +1,28 @@
+CREATE TABLE 'users' (
+`user_id` INT( 5 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`username` VARCHAR( 25 ) NOT NULL ,
+`email` VARCHAR( 35 ) NOT NULL ,
+`password` VARCHAR( 50 ) NOT NULL ,
+UNIQUE (`email`)
+) ENGINE = MYISAM ;
+
+CREATE TABLE content (
+`user_id` INT( 5 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`username` VARCHAR( 25 ) NOT NULL ,
+`content` text
+
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE gallery_photos (
+  photo_id bigint(20) unsigned NOT NULL auto_increment PRIMARY KEY ,
+  photo_filename varchar(25),
+  username VARCHAR( 25 ) NOT NULL ,
+) ENGINE = MyISAM;
+
+CREATE TABLE comments (
+  comment_id bigint(20) unsigned NOT NULL auto_increment PRIMARY KEY ,
+  comment text,
+  username VARCHAR( 25 ) NOT NULL,
+  home VARCHAR( 25 )
+) ENGINE = MyISAM;
