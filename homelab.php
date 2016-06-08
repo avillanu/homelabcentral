@@ -3,7 +3,7 @@ session_start();
 include("header2.php");
 $target_dir = "uploads/";
 include("dbconnect.php");
-echo "<div class='panel'>";
+echo "<BR><BR><BR><BR><BR><div class='panel'>";
 if( isset($_GET['id']) )
 {
 $id = mysql_real_escape_string($_GET['id']);

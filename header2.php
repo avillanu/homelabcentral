@@ -1,8 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php
 include("dbconnect.php");
-session_start();
-$user = mysql_real_escape_string($_SESSION['user']);
+$user=mysql_real_escape_string($_SESSION['user']);
 $res=mysql_query("SELECT * FROM users WHERE user_id=".$user);
 $userRow=mysql_fetch_array($res);
 ?>

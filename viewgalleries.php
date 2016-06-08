@@ -1,10 +1,8 @@
 <?php
-include("dbconnect.php");
+session_start();
 include("header2.php");
-
-echo '<div class="panel"><p align=center>';
+echo '<BR><BR><BR><BR><BR><div class="panel"><p align=center>';
 $sql = "SELECT username,content,user_id FROM content";
-
 $root = $_SERVER['DOCUMENT_ROOT'];
 // include($root."/nasapan/inc/header.php");
 $target_dir = "uploads/";

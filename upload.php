@@ -91,7 +91,6 @@ if ($uploadOk == 0) {
         $newfilename = round(microtime(true)) . '.' . $imageFileType;
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "uploads/" . $newfilename);
         echo "Stored in: " . "../uploads/" .  $newfilename;
-        echo "actually stored in ". $newfilename;
         $user = $_SESSION['user'];
         $query="INSERT INTO gallery_photos (photo_filename, username)
 VALUES ('$newfilename', '$user')";

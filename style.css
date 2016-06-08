@@ -97,7 +97,7 @@ table tr td a
     width:600px;
     background-color:#ffffff;
     align:center;
-    position: absolute;
+    position: relative;
     margin: -100px 0 0 -300px;
     top:30%;
     left: 50%;
