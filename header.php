@@ -24,7 +24,7 @@ $userRow=mysql_fetch_array($res);
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-<body>
+<body><div></div>
 
 <div id="header">
  <div id="left">
