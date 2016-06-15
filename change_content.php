@@ -6,6 +6,7 @@ $query="UPDATE content
            SET content='$content'
            WHERE user_id='$user'";
            mysql_query($query)or die(mysql_error());
-echo "<div class='panel'> Content added </div>";
+
+echo "<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><div class='panel'> Content added </div>";
 include("footer.php");
 ?>
